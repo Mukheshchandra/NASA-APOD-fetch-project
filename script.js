@@ -38,3 +38,10 @@ function loadNasaData(){
         console.log(error);
     })
 }
+
+function resetData(){
+    document.getElementById("title").innerHTML = "Title goes here";
+        document.getElementById("date").innerHTML = "date goes here";
+        document.getElementById("explanation").innerHTML = "explanation goes here";
+        document.getElementById("image").src = "https://www.hdwallpapers.net/previews/psychedelic-skull-981.jpg" ;
+}

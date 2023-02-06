@@ -19,22 +19,28 @@
 <body>
     <div class="container-fluid text-center">
         <div class="container-fluid text-center">
-            <h2 class="pt-4">Let's load some images from NASA</h2>
+            <h2 class="pt-4 text-uppercase fw-bolder fs-1">Let's load some images from NASA</h2>
           </div>
           <div class="container-fluid text-center pt-2">
-            <button type="button" class="btn btn-outline-secondary" onclick="loadNasaData()">CLICK FOR NASA IMAGES
+            <button type="button" class="btn btn-outline-primary" onclick="loadNasaData()">CLICK FOR NASA IMAGE
             </button>
+            <button type="button" class="btn btn-outline-warning text-uppercase" onclick="resetData()">reset</button>
             <br>
             <hr>
             <div id="nasaData">
-                <h1 id="title">Title goes here</h1>
-            <img src="https://www.hdwallpapers.net/previews/psychedelic-skull-981.jpg" 
-            class="img-fluid"
+              <div class="row">
+                <div class="col col-md-6">
+                  <img src="https://www.hdwallpapers.net/previews/psychedelic-skull-981.jpg" 
+            class="img-fluid rounded img-thumbnail"
              alt="image from nasa comes here"
-             id="image"
-            >
-                <p id="date">date goes here</p>
+             id="image">
+             <p id="date" class="pt-2 text-white text-decoration-underline">date goes here</p>
+                </div>
+                <div class="col col-md-6">
+                <h1 id="title" class="text-uppercase pb-3 pt-6" style="color:#f2f2f2 ;">Title goes here</h1>
                 <p id="explanation">explanation goes here</p>
+                </div>
+              </div>
                 <hr>
             </div>
             </div>
